@@ -26,7 +26,8 @@ figure {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -139,7 +140,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -157,7 +159,8 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -209,11 +212,13 @@ template {
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .sr-only {
@@ -228,4 +233,67 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Barlow";
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 6.9rem;
+  line-height: 6.3rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.6rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  font-size: 1rem;
+  line-height: 1.45rem;
+  letter-spacing: 1px;
+}
+
+button {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
