@@ -297,3 +297,18 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #0c1423;
+}
