@@ -378,3 +378,10 @@ nav ul a:hover, nav ul a:focus {
   text-align: center;
   margin-top: 170px;
 }
+
+footer {
+  background-color: #86e0f9;
+  font-size: 0.8rem;
+  color: #0c1423;
+  text-align: center;
+}
