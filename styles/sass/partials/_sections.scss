@@ -1,0 +1,171 @@
+// Home sections
+
+.about {
+    padding: 275px 0;
+    text-align: center;
+
+    p {
+        text-align: left;
+        margin: 50px 0;
+    }
+
+    button {
+        background-color: $tertiary;
+        color: $primary;
+        padding: 15px 40px;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+            background-color: $secondary;
+            color: $bodyText;
+            cursor: pointer;
+        }
+    }
+}
+
+.readMore {
+    position: relative;
+    background-color: $secondary;
+    padding: 50px 0;
+
+    .readMoreContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .newAdditions,
+    .meetRealNemo {
+        width: 35%;
+
+        .gap {
+            height: 500px;
+        }
+
+        p {
+            margin: 30px 0;
+        }
+
+        button {
+            background-color: $primary;
+            color: $bodyText;
+            padding: 10px 25px;
+            transition: 0.5s;
+
+            &:hover,
+            &:focus {
+                background-color: $tertiary;
+                color: $primary;
+                cursor: pointer;
+        }
+        }
+    }
+
+    .newAdditions {
+        text-align: right;
+
+        img {
+            position: absolute;
+            top: -50px;
+            left: 0;
+            box-shadow: 40px 40px 0 -10px $tertiary;
+            width: 40%;
+        }
+    }
+    
+    .meetRealNemo {
+        img {
+            position: absolute;
+            bottom: -50px;
+            right: 0;
+            box-shadow: -40px 40px 0 -10px $tertiary;
+            width: 40%;
+        }
+    }
+}
+
+.moreInfo {
+    padding: 100px 0;
+
+    .moreInfoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            position: relative;
+            width: 45%;
+        }
+
+        h4 {
+            margin: 55px 0 25px 0;
+            transition: 0.5s;
+
+            &:hover,
+            &:focus {
+                color: $secondary;   
+            }
+        }
+
+        i {
+            position: absolute;
+            left: -80px;
+            top: 45px;
+            font-size: 1.5rem;
+            background-color: $tertiary;
+            color: $primary;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+    }
+}
+
+.thisMonthProfile {
+    img {
+        width: 100%;
+    }
+
+    .thisMonthProfileContainer {
+        padding: 150px 0 100px 0;
+        display: flex;
+        align-items: center;
+
+        img {
+            box-shadow: 35px 35px 0 0 $tertiary;
+            margin-right: 100px;
+        }
+
+        p {
+            margin: 25px 0 50px 0;
+        }
+
+        button {
+            background-color: $tertiary;
+            color: $primary;
+            padding: 10px 30px;
+            transition: 0.5s;
+
+            &:hover,
+            &:focus {
+                background-color: $secondary;
+                color: $bodyText;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.gallery {
+    background-color: $secondary;
+    padding: 100px 0;
+
+    .galleryContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
