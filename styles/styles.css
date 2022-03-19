@@ -365,6 +365,7 @@ nav ul a:hover, nav ul a:focus {
 }
 .homeHeader .headerImg img {
   width: 100%;
+  z-index: 10;
 }
 
 .blogHeader {
@@ -432,10 +433,6 @@ footer {
 .readMore .meetRealNemo {
   width: 35%;
 }
-.readMore .newAdditions .gap,
-.readMore .meetRealNemo .gap {
-  height: 500px;
-}
 .readMore .newAdditions p,
 .readMore .meetRealNemo p {
   margin: 30px 0;
@@ -457,6 +454,7 @@ footer {
 }
 .readMore .newAdditions {
   text-align: right;
+  padding-top: 500px;
 }
 .readMore .newAdditions img {
   position: absolute;
@@ -465,6 +463,7 @@ footer {
   -webkit-box-shadow: 40px 40px 0 -10px #86e0f9;
           box-shadow: 40px 40px 0 -10px #86e0f9;
   width: 40%;
+  z-index: 10;
 }
 .readMore .meetRealNemo img {
   position: absolute;
@@ -473,6 +472,7 @@ footer {
   -webkit-box-shadow: -40px 40px 0 -10px #86e0f9;
           box-shadow: -40px 40px 0 -10px #86e0f9;
   width: 40%;
+  z-index: 10;
 }
 
 .moreInfo {
@@ -523,6 +523,7 @@ footer {
 
 .thisMonthProfile img {
   width: 100%;
+  z-index: 10;
 }
 .thisMonthProfile .thisMonthProfileContainer {
   padding: 150px 0 100px 0;
@@ -537,6 +538,7 @@ footer {
   -webkit-box-shadow: 35px 35px 0 0 #86e0f9;
           box-shadow: 35px 35px 0 0 #86e0f9;
   margin-right: 100px;
+  z-index: 10;
 }
 .thisMonthProfile .thisMonthProfileContainer p {
   margin: 25px 0 50px 0;
@@ -568,4 +570,83 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.blogPosts {
+  position: relative;
+  padding: 150px 0;
+}
+.blogPosts .blogPostsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogPosts .leftBlogSide {
+  width: 35%;
+  height: 100%;
+  padding: 550px 40px 30px 20px;
+  background-color: #0f614e;
+}
+.blogPosts .leftBlogSide h4 {
+  margin: 60px 0 30px 0;
+}
+.blogPosts .leftBlogSide li {
+  list-style: inside;
+  text-transform: none;
+  opacity: 0.8;
+  line-height: 1.6rem;
+}
+.blogPosts .leftBlogSide img {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 39%;
+  background: transparent;
+  z-index: 10;
+}
+.blogPosts .rightBlogSide {
+  width: 65%;
+}
+.blogPosts .rightBlogSide .discoveringNewSpecies {
+  padding: 500px 0 30px 40px;
+  margin-left: 70px;
+  border-left: 5px solid #86e0f9;
+  border-bottom: 5px solid #86e0f9;
+}
+.blogPosts .rightBlogSide .discoveringNewSpecies p:nth-child(3) {
+  margin: 20px 0 60px 0;
+}
+.blogPosts .rightBlogSide .discoveringNewSpecies img {
+  position: absolute;
+  top: -200px;
+  right: 0;
+  width: 54%;
+  -webkit-box-shadow: -50px 50px 0 -8px #86e0f9;
+          box-shadow: -50px 50px 0 -8px #86e0f9;
+}
+
+.comments {
+  margin: 50px 0 100px 100px;
+}
+.comments .firstComment,
+.comments .secondComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comments .firstComment .commentImg,
+.comments .secondComment .commentImg {
+  margin: 50px 50px 50px 0;
+}
+.comments .firstComment .firstCommentText p:nth-child(1),
+.comments .firstComment .secondCommentText p:nth-child(1),
+.comments .secondComment .firstCommentText p:nth-child(1),
+.comments .secondComment .secondCommentText p:nth-child(1) {
+  margin: 45px 0 10px 0;
 }
