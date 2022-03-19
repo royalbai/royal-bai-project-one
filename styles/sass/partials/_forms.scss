@@ -1,0 +1,92 @@
+// Base form styles 
+
+form {
+    width: 100%;
+
+    textarea,
+    input {
+        padding: 20px;
+        background-color: transparent;
+        color: $bodyText;
+        line-height: 1.6rem;
+        border: none;
+
+        &::placeholder {
+            color: $bodyText;
+            opacity: 0.8;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        border: 3px solid $tertiary;
+    }
+
+    label,
+    input {
+        display: block;
+        border-bottom: 3px solid $tertiary;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 50px;
+        color: $bodyText;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        input {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .nameContainer {
+        width: 45%;
+    }
+
+    .emailContainer {
+        width: 45%;
+    }
+}
+
+// Blog form styles 
+
+.rightBlogSide {
+    form {
+        margin-left: 50px;
+    }
+
+    button {
+        background-color: $secondary;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+            background-color: $tertiary;
+            color: $primary;
+            cursor: pointer;
+        }
+    }
+}
+
+// Contact form styles 
+
+.social {
+    button {
+        background-color: $primary;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+            background-color: $tertiary;
+            color: $primary;
+            cursor: pointer;
+        }
+    }
+}
