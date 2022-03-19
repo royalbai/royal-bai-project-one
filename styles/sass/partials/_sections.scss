@@ -253,3 +253,35 @@
         }
     }
 }
+
+// Contact section
+
+.social {
+    position: relative;
+    padding: 200px 0;
+
+    a {
+        font-size: 1.5rem;
+        margin-right: 30px;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+            color: $tertiary;
+        }
+    }
+
+    .contactEmail {
+        margin: 30px 0;
+    }
+
+    .contactForm {
+        position: absolute;
+        top: -300px;
+        right: 250px;
+        background-color: $secondary;
+        width: 50%;
+        padding: 80px;
+        box-shadow: -50px 50px 0 -10px $tertiary;
+    }
+}
