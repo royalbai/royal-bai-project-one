@@ -199,4 +199,144 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    button {
+            width: 100%;
+        }
+    
+    // Home page
+
+    .homeHeader{
+        height: 400px;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+
+    .readMore {
+        .newAdditions {
+            padding-top: 100px;
+        }
+    }
+
+    .moreInfo {
+        .moreInfoContainer {
+            i {
+                display: none;
+            }
+
+            h4 {
+                text-align: start;
+            }
+        }
+    }
+
+    .thisMonthProfileContainer {
+        flex-direction: column;
+
+        img {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .thisMonthProfileText {
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+
+    .gallery {
+        padding: 50px 0;
+
+        img {
+            max-width: 90%;
+            margin: 10px 0;
+        }
+
+        .galleryContainer {
+            flex-direction: column;
+        }
+    }
+
+    // Blog page
+
+    .blogHeader {
+        height: 300px;
+    }
+
+    .blogPosts {
+        padding: 100px 0;
+
+        .blogPostsContainer {
+            flex-direction: column;
+        }
+
+        .leftBlogSide {
+            padding: 5px;
+            width: 100%;
+
+            img {
+                position: relative;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        .rightBlogSide {
+            width: 100%;
+            margin-top: 100px;
+
+            .discoveringNewSpecies {
+                padding: 5px;
+                margin-left: 0;
+
+                img {
+                    position: relative;
+                    top: -70px;
+                    width: 100%;
+                    margin-bottom: 50px;
+                    box-shadow: -20px 50px 0 -10px $tertiary;
+                }
+            }
+        }
+
+        .comments {
+            margin: 50px 0 100px 0px;
+        }
+    }
+
+    // Contact page
+
+    .contactHeader {
+        height: 300px;
+
+        h2 {
+            margin-top: 50px;
+        }
+    }
+
+    .social {
+        .socialIcons,
+        .contactEmail,
+        .contactInfo {
+            text-align: center;
+        }
+
+        .contactForm {
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding: 20px;
+            margin-top: 100px;
+        }
+    }
 }
