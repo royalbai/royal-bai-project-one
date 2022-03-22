@@ -215,7 +215,7 @@
         border: 5px solid $secondary;
         width: 85%;
         left: 40px;
-        top: -300px;
+        top: -400px;
         transition: 0.5s;
 
         ul {
@@ -236,18 +236,6 @@
         i {
             font-size: 2rem;
             padding-top: 10px;
-        }
-
-        input[type=checkbox] {
-            opacity: 0;
-            position: absolute;
-
-            &:checked ~ .slide {
-                top: 0px;
-            }
-            &:focus + label {
-                border: 5px dotted $secondary           ;
-            }
         }
     }
     
