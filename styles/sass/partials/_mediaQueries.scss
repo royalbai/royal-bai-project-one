@@ -10,9 +10,18 @@
         }
     }
 
+    .about {
+        padding: 250px 0;
+    }
+
     .readMore {
         .newAdditions {
             padding-top: 200px;
+        }
+
+        .newAdditions,
+        .meetRealNemo {
+            width: 40%;
         }
     }
 
@@ -26,7 +35,16 @@
                 left: 0px;
             }
         }
-        
+    }
+
+    .thisMonthProfileContainer {
+        img {
+            width: 30%;
+        }
+
+        .thisMonthProfileText {
+            width: 70%;
+        }
     }
 
     .gallery {
@@ -67,6 +85,7 @@
         .rightBlogSide {
             form {
                 margin-left: 0px;
+                width: 100%;
             }
         }
     }
@@ -89,6 +108,102 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+    
+    // Home page
+
+    .homeHeader{
+        height: 500px;
+
+        .headerImg {
+            top: 250px;
+        }
+    }
+
+    .about {
+        padding: 200px 0;
+    }
+
+    .readMore {
+        .newAdditions {
+            padding-top: 150px;
+        }
+
+        .newAdditions,
+        .meetRealNemo {
+            width: 45%;
+        }
+    }
+
+    .thisMonthProfileContainer {
+        img {
+            width: 35%;
+        }
+
+        .thisMonthProfileText {
+            width: 65%;
+        }
+    }
+
+    .gallery {
+        img {
+            max-width: 30%;
+        }
+    }
+
+    // Blog page
+
+    .blogHeader {
+        height: 500px;
+
+        h2 {
+            margin-top: 100px;
+        }
+    }
+
+    .blogPosts {
+        .leftBlogSide {
+            padding: 250px 40px 30px 20px;
+            width: 40%;
+        }
+
+        .rightBlogSide {
+            width: 60%;
+
+            .discoveringNewSpecies {
+                padding: 200px 0 30px 40px;
+                margin-left: 5px;
+            }
+        }
+
+        .comments {
+            margin: 50px 0 100px 20px;
+        }
+
+        .rightBlogSide {
+            form {
+                margin-left: 0px;
+                width: 100%;
+            }
+        }
+    }
+
+    // Contact page
+
+    .contactHeader {
+        height: 500px;
+    }
+
+    .social {
+        .contactForm {
+            top: -100px;
+            right: 50px;
+            width: 50%;
+            padding: 40px;
+        }
+    }
 }
 
 /* Landscape phones and down */

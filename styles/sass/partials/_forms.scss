@@ -60,6 +60,7 @@ form {
 .rightBlogSide {
     form {
         margin-left: 50px;
+        width: calc(100% - 50px);
     }
 
     button {

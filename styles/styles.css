@@ -752,6 +752,7 @@ form .emailContainer {
 
 .rightBlogSide form {
   margin-left: 50px;
+  width: calc(100% - 50px);
 }
 .rightBlogSide button {
   background-color: #0f614e;
@@ -784,8 +785,16 @@ form .emailContainer {
     top: 300px;
   }
 
+  .about {
+    padding: 250px 0;
+  }
+
   .readMore .newAdditions {
     padding-top: 200px;
+  }
+  .readMore .newAdditions,
+.readMore .meetRealNemo {
+    width: 40%;
   }
 
   .moreInfo .moreInfoContainer h4 {
@@ -793,6 +802,13 @@ form .emailContainer {
   }
   .moreInfo .moreInfoContainer i {
     left: 0px;
+  }
+
+  .thisMonthProfileContainer img {
+    width: 30%;
+  }
+  .thisMonthProfileContainer .thisMonthProfileText {
+    width: 70%;
   }
 
   .gallery img {
@@ -822,6 +838,7 @@ form .emailContainer {
   }
   .blogPosts .rightBlogSide form {
     margin-left: 0px;
+    width: 100%;
   }
 
   .contactHeader {
@@ -836,4 +853,76 @@ form .emailContainer {
   }
 }
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+
+  .homeHeader {
+    height: 500px;
+  }
+  .homeHeader .headerImg {
+    top: 250px;
+  }
+
+  .about {
+    padding: 200px 0;
+  }
+
+  .readMore .newAdditions {
+    padding-top: 150px;
+  }
+  .readMore .newAdditions,
+.readMore .meetRealNemo {
+    width: 45%;
+  }
+
+  .thisMonthProfileContainer img {
+    width: 35%;
+  }
+  .thisMonthProfileContainer .thisMonthProfileText {
+    width: 65%;
+  }
+
+  .gallery img {
+    max-width: 30%;
+  }
+
+  .blogHeader {
+    height: 500px;
+  }
+  .blogHeader h2 {
+    margin-top: 100px;
+  }
+
+  .blogPosts .leftBlogSide {
+    padding: 250px 40px 30px 20px;
+    width: 40%;
+  }
+  .blogPosts .rightBlogSide {
+    width: 60%;
+  }
+  .blogPosts .rightBlogSide .discoveringNewSpecies {
+    padding: 200px 0 30px 40px;
+    margin-left: 5px;
+  }
+  .blogPosts .comments {
+    margin: 50px 0 100px 20px;
+  }
+  .blogPosts .rightBlogSide form {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .contactHeader {
+    height: 500px;
+  }
+
+  .social .contactForm {
+    top: -100px;
+    right: 50px;
+    width: 50%;
+    padding: 40px;
+  }
+}
 /* Landscape phones and down */
