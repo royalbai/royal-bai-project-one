@@ -1,5 +1,5 @@
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 960px) {
     // Home page
 
     .homeHeader{
@@ -111,7 +111,7 @@
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     html {
         font-size: 100%;
     }
@@ -206,6 +206,50 @@
     button {
             width: 100%;
         }
+
+    // Nav pop out
+
+    nav {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.95);
+        border: 5px solid $secondary;
+        width: 85%;
+        left: 40px;
+        top: -300px;
+        transition: 0.5s;
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+
+            a {
+                font-size: 2rem;
+                margin: 0;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .mobileNav {
+        display: block;
+
+        i {
+            font-size: 2rem;
+            padding-top: 10px;
+        }
+
+        input[type=checkbox] {
+            opacity: 0;
+            position: absolute;
+
+            &:checked ~ .slide {
+                top: 0px;
+            }
+            &:focus + label {
+                border: 5px dotted $secondary           ;
+            }
+        }
+    }
     
     // Home page
 
@@ -317,13 +361,11 @@
 
     .contactHeader {
         height: 300px;
-
-        h2 {
-            margin-top: 50px;
-        }
     }
 
     .social {
+        padding: 100px 0;
+
         .socialIcons,
         .contactEmail,
         .contactInfo {
