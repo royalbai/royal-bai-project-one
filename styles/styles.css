@@ -934,16 +934,6 @@ form .emailContainer {
     width: 100%;
   }
 
-  nav {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.95);
-    border: 5px solid #0f614e;
-    width: 85%;
-    left: 40px;
-    top: -300px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
   nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -952,29 +942,35 @@ form .emailContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 5px solid #0f614e;
+    width: 85%;
+    left: 40px;
+    top: -400px;
+    z-index: 20;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   nav ul a {
     font-size: 2rem;
     margin: 0;
     padding: 20px 0;
   }
-
-  .mobileNav {
-    display: block;
-  }
-  .mobileNav i {
+  nav label {
+    display: inline-block;
     font-size: 2rem;
+    height: 60px;
+    width: 30px;
     padding-top: 10px;
+    cursor: pointer;
   }
-  .mobileNav input[type=checkbox] {
+  nav input[type=checkbox] {
     opacity: 0;
     position: absolute;
   }
-  .mobileNav input[type=checkbox]:checked ~ .slide {
-    top: 0px;
-  }
-  .mobileNav input[type=checkbox]:focus + label {
-    border: 5px dotted #0f614e;
+  nav input[type=checkbox]:checked ~ ul {
+    top: 20px;
   }
 
   .homeHeader {
