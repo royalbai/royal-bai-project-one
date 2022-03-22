@@ -1,0 +1,96 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    // Home page
+
+    .homeHeader{
+        height: 600px;
+
+        .headerImg {
+            top: 300px;
+        }
+    }
+
+    .readMore {
+        .newAdditions {
+            padding-top: 200px;
+        }
+    }
+
+    .moreInfo {
+        .moreInfoContainer {
+            h4 {
+                text-align: center;
+            }
+
+            i {
+                left: 0px;
+            }
+        }
+        
+    }
+
+    .gallery {
+        img {
+            max-width: 30%;
+        }
+    }
+
+    // Blog page
+
+    .blogHeader {
+        height: 500px;
+
+        h2 {
+            margin-top: 100px;
+        }
+    }
+
+    .blogPosts {
+        .leftBlogSide {
+            padding: 250px 40px 30px 20px;
+            width: 40%;
+        }
+
+        .rightBlogSide {
+            width: 60%;
+
+            .discoveringNewSpecies {
+                padding: 200px 0 30px 40px;
+                margin-left: 5px;
+            }
+        }
+
+        .comments {
+            margin: 50px 0 100px 20px;
+        }
+
+        .rightBlogSide {
+            form {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    // Contact page
+
+    .contactHeader {
+        height: 500px;
+    }
+
+    .social {
+        .contactForm {
+            top: -100px;
+            right: 50px;
+            width: 50%;
+            padding: 40px;
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
