@@ -1,5 +1,10 @@
-const mobileMenu = document.querySelector(".burgerIcon");
+window.onload = function() {
+    const mobileMenuIcon = document.querySelector(".burgerIcon");
+    const mobileMenuDropdown = document.querySelector(".mobileNav");
 
-mobileMenu.addEventListener("click", function() {
-    
-})
+    mobileMenuIcon.addEventListener("click", function() {
+        mobileMenuIcon.classList.toggle("active");
+        mobileMenuDropdown.classList.toggle("active");
+    });
+}
+
