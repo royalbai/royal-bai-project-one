@@ -1,4 +1,4 @@
-window.onload = function() {
+// window.onload = function() {
     const mobileMenuIcon = document.querySelector(".burgerIcon");
     const mobileMenuDropdown = document.querySelector(".mobileNav");
 
@@ -31,4 +31,4 @@ window.onload = function() {
             messageInput.value = "";
         }
     });
-};
+// };
