@@ -207,48 +207,90 @@
             width: 100%;
         }
 
+    header {
+        padding-top: 20px;
+    }
+
     // Nav pop out
 
-    nav {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.95);
-        border: 5px solid $secondary;
-        width: 85%;
-        left: 40px;
-        top: -300px;
-        transition: 0.5s;
+    .standardNav {
+        display: none;
+    }
 
-        ul {
-            flex-direction: column;
-            justify-content: center;
+    .burgerIcon {
+        position: relative;
+        display: block;
+        width: 35px;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        z-index: 30;
 
-            a {
-                font-size: 2rem;
-                margin: 0;
-                padding: 20px 0;
-            }
+        .navBar,
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: white;
+            margin: 5px 0;
+            transition: 0.5s;
+        }
+    }
+
+    .burgerIcon.active {
+        &:before {
+            transform: rotate(45deg) translate(6px, 7px);
+        }
+
+        &:after {
+            transform: rotate(-45deg) translate(7px, -8px);
+        }
+
+        .navBar {
+            opacity: 0;
         }
     }
 
     .mobileNav {
         display: block;
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        height: 500px;
+        background-color: $secondary;
+        z-index: 20;
+        transition: 0.5s;
 
-        i {
+        ul {
+            flex-direction: column;
+            padding-top: 60px;
+        }
+
+        li {
+            width: 100%;
+            text-align: center;
+        }
+        
+        a {
             font-size: 2rem;
-            padding-top: 10px;
-        }
+            margin: 0 auto;
+            padding: 30px;
+            width: 100%;
 
-        input[type=checkbox] {
-            opacity: 0;
-            position: absolute;
-
-            &:checked ~ .slide {
-                top: 0px;
+            &:hover,
+            &:focus {
+                background-color: $primary;
             }
-            &:focus + label {
-                border: 5px dotted $secondary           ;
-            }
+            
         }
+    }
+
+    .mobileNav.active {
+        top: 0;
     }
     
     // Home page
