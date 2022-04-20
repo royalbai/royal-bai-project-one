@@ -984,7 +984,7 @@ form .emailContainer {
     position: fixed;
     top: -100%;
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-color: #0f614e;
     z-index: 20;
     -webkit-transition: 0.5s;
