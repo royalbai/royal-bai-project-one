@@ -982,7 +982,7 @@ form .emailContainer {
   .mobileNav {
     display: block;
     position: fixed;
-    top: -100%;
+    top: -120%;
     width: 100%;
     height: 100vh;
     background-color: #0f614e;
