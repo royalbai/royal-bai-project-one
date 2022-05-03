@@ -15,6 +15,7 @@
         link.addEventListener("click", function() {
             // console.log("Clicked");
             mobileMenuDropdown.classList.remove("active");
+            mobileMenuIcon.classList.remove("active");
         })
     })
 // };
